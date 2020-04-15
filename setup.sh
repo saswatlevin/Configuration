@@ -4,7 +4,14 @@
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install git
-sudo apt install python3-pip
+sudo apt-get install python3-pip
+sudo apt-get search <package_name>
+
+# Utility to search for a file within packages
+sudo apt install apt-file 
+sudo apt-file update
+# To clear the apt-file cache
+sudo apt-file purge
 
 # Remove any previous installations of x264</h3>
 sudo apt-get remove x264 libx264-dev
@@ -44,6 +51,20 @@ pip3 install numpy --no-cache-dir --user
 pip3 install python-opencv --no-cache-dir --user
 pip3 install --user python2-secrets
 pip3 install matplotlib --no-cache-dir --user
+
+# Install C++ Libraries
+sudo apt-get install libboost-dev-all
+sudo apt-get install libbotan-1.10-1
+
+# Install Mono and Monodevelop IDE for C#
+sudo apt-get install mono-devel
+sudo apt-get install monodevelop
+sudo apt-get install chicken-bin
+
+# Locate a particular library or directory
+whereis <directory_name>
+locate  <directory-name>
+
 
 # NOTE:- To install matplotlib 3.0 or higer, you need to have pip version >=9.01 installed
 
